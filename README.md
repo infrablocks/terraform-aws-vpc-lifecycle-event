@@ -13,8 +13,6 @@ The network consists of:
 * A notification (in the form of removal of the S3 object) in an S3 bucket on
   VPC deletion
 
-![Diagram of infrastructure managed by this module](https://raw.githubusercontent.com/infrablocks/terraform-aws-vpc-lifecycle-event/master/docs/architecture.png)
-
 Usage
 -----
 
