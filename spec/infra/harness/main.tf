@@ -11,7 +11,8 @@ data "aws_vpc" "target" {
 }
 
 module "vpc_lifecycle_event" {
-  source = "../../../../"
+  # This makes absolutely no sense. I think there's a bug in terraform.
+  source = "./../../../../../../../"
 
   vpc_id = data.terraform_remote_state.prerequisites.outputs.vpc_id
   vpc_account_id = data.aws_vpc.target.owner_id
