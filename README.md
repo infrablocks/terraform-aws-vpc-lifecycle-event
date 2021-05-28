@@ -25,6 +25,9 @@ module "vpc_lifecycle_event" {
 }
 ```
 
+See the 
+[Terraform registry entry](https://registry.terraform.io/modules/infrablocks/vpc-lifecycle-event/aws/latest) 
+for more details.
 
 ### Inputs
 
@@ -79,6 +82,10 @@ module "vpc_lifecycle_event" {
 * route53:GetChange
 * route53:GetHostedZone
 
+### Compatibility
+
+This module is compatible with Terraform versions greater than or equal to 
+Terraform 0.14.
 
 Development
 -----------
