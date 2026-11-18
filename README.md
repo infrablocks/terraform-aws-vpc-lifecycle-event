@@ -1,7 +1,7 @@
 Terraform AWS VPC Lifecycle Event
 =================================
 
-[![CircleCI](https://circleci.com/gh/infrablocks/terraform-aws-vpc-lifecycle-event.svg?style=svg)](https://circleci.com/gh/infrablocks/terraform-aws-vpc-lifecycle-event)
+[![Main](https://github.com/infrablocks/terraform-aws-vpc-lifecycle-event/actions/workflows/main.yaml/badge.svg)](https://github.com/infrablocks/terraform-aws-vpc-lifecycle-event/actions/workflows/main.yaml)
 
 A Terraform module for notifying of VPC lifecycle changes in AWS.
 
@@ -234,16 +234,16 @@ git-crypt add-gpg-user --trusted GPG-USER-ID
 
 ```
 
-#### Managing CircleCI keys
+#### Managing CI keys
 
-To encrypt a GPG key for use by CircleCI:
+To encrypt a GPG key for use by CI:
 
 ```bash
 openssl aes-256-cbc \
   -e \
   -md sha1 \
   -in ./config/secrets/ci/gpg.private \
-  -out ./.circleci/gpg.private.enc \
+  -out ./.github/gpg.private.enc \
   -k "<passphrase>"
 ```
 
@@ -253,7 +253,7 @@ To check decryption is working correctly:
 openssl aes-256-cbc \
   -d \
   -md sha1 \
-  -in ./.circleci/gpg.private.enc \
+  -in ./.github/gpg.private.enc \
   -k "<passphrase>"
 ```
 
